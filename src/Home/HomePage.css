@@ -1,0 +1,158 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh; 
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+}
+
+.home-page {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; 
+  width: 100%;
+  padding-top: 900px; 
+  padding-bottom:0px;
+  text-align: center;
+}
+
+header {
+  background-color: #bdbdbd;
+  padding: 20px 40px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-left: 20px;
+}
+
+header h1 {
+  margin: 2px;
+  font-size: 40px;
+}
+
+header button {
+  padding: 10px 15px;
+  background-color: #ff0000;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-right: 15px;
+  transition: background-color 0.3s ease;
+}
+
+header button:hover {
+  background-color: #ff0000ba;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+main {
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+}
+
+main h2 {
+  margin-top: 0;
+  font-size: 24px;
+  color: #333;
+}
+
+.destinations {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px; 
+  width: 100%;
+}
+
+.destination-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.destination-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.destination-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+}
+
+.destination-card h3 {
+  margin: 10px 0;
+  color: #333;
+  font-size: 18px;
+}
+
+.destination-card p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.destination-card button {
+  padding: 10px;
+  background-color: #28A745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.destination-card button:hover {
+  background-color: #218838;
+}
+
+footer {
+  background-color: #cfcfcf;
+  color: white;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+  margin-top: auto; 
+}
+
+@media (max-width: 768px) {
+  .home-page {
+    padding-top: 60px; 
+  }
+
+  header h1 {
+    font-size: 20px;
+  }
+
+  header button {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+
+  .destination-card {
+    padding: 8px;
+  }
+
+  .destination-card h3 {
+    font-size: 16px;
+  }
+
+  .destination-card p {
+    font-size: 12px;
+  }
+}
